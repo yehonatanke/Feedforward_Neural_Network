@@ -91,6 +91,24 @@ def gradient_descent(parameters, gradients, learning_rate):
     return W1, b1, W2, b2
 
 def train_model(X_train, y_train, X_val, y_val, input_size, hidden_size, output_size, learning_rate, epochs, patience=5):
+    """
+    Trains the neural network model.
+
+    Args:
+        X_train (numpy.ndarray): Training features.
+        y_train (numpy.ndarray): Training labels.
+        X_val (numpy.ndarray): Validation features.
+        y_val (numpy.ndarray): Validation labels.
+        input_size (int): Number of input features.
+        hidden_size (int): Number of units in the hidden layer.
+        output_size (int): Number of output units.
+        learning_rate (float): Learning rate for gradient descent.
+        epochs (int): Number of epochs.
+        patience (int): Number of epochs to wait for improvement in validation loss before early stopping.
+
+    Returns:
+        tuple: Trained parameters.
+    """
     best_loss = np.inf
     patience_count = 0
     best_params = None
