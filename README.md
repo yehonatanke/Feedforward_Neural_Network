@@ -10,7 +10,7 @@ A Python implementation of a feedforward neural network, also known as a multila
 - **Documentation**: Includes detailed documentation for each function to aid understanding and usage.
 
 
-## Neural Network Architecture
+## Architecture
 The feedforward neural network consists of the following layers:
 
 1. **Input Layer**: Accepts input features.
